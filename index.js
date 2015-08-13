@@ -111,9 +111,9 @@ function equi () {
         E += (k * point.charge)/r2;
       });
       // if ( E >= .93 && E <= 1 ) {
-      if ( fuzz(E, k/2, 3e8) ) {
+      if ( fuzz(E, 0, 1e9) ) {
         // TODO: Input user value for the three parameters
-        ctx.fillStyle = "grey";
+        ctx.fillStyle = "rgba(128,128,128,.3)";
         ctx.fillRect(i, j, 1, 1);
       }
     }
