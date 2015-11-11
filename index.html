@@ -7,19 +7,39 @@
   <style>
   body {
     text-align: center;
-    font-family: Segoe UI;
+    font-family: Segoe UI, Helvetica;
     font-size: 125%;
     color: #353535;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  a {
+    color: dodgerblue;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
   }
   </style>
 </head>
-<body style="margin: 0; padding: 0; overflow: hidden;">
+<body>
   <canvas>
     
   </canvas>
   <p>The charge on the left is a <strong>+1</strong> charge, the one on the right is <strong>-1</strong>.<br>Visualized is the surface where the electric field magnitude is <strong>0</strong>.</p>
-  <p><em>More coming soon.</em></p>
+  <p><em>Work in progress.</em> <a href="http://projects.namanyayg.com/gyan">In the meanwhile, check out some more of my simulations?</a></p>
   <script src="index.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-41471024-7', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 </html>
